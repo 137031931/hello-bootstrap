@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
     <link href="assets/plugins/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+        .my_div {
+            border: 1px solid red;
+        }
+        .my_div_1{
+            /*这里!important表示强制,会使就近原则失效*/
+            border: 1px solid !important;
+        }
+        @media screen and (max-width: 480px){
+            .my_div{
+                border:1px solid yellow;
+            }
+        }
+    </style>
 </head>
 <body>
 <h1>Hello Bootstrap</h1>
-<div class="container" style="border: 1px solid green;">
+<!--<div class="container" style="border: 1px solid green;">-->
     <div class="row">
         <div class="col-md-6" style="border: 1px solid red;">左</div>
         <div class="col-md-6" style="border: 1px solid red;">右</div>
@@ -18,7 +32,16 @@
         <div class="col-md-6" style="border: 1px solid yellow;">左</div>
         <div class="col-md-6" style="border: 1px solid yellow;">右</div>
     </div>
-</div>
+    <div class="my_div">
+        Hello 媒体查询
+    </div>
+<br/>
+<br/>
+<br/>
+    <div class="my_div_1" style="border: 1px solid black;">
+        Hello
+    </div>
+<!--</div>-->
 <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
 <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
 <!--[if lt IE 9]>
