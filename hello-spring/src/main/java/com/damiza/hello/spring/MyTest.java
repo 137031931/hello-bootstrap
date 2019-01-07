@@ -25,7 +25,7 @@ public class MyTest {
         String message2 = "测试2";
         //这种写法没有使用+号而是使用占位符{},节省了运行空间
         logger.info("message is: {} {}",message1,message2);
-        //在字符串拼接的时候同样可以使用这种方法,但是要用format方法
+        //在字符串拼接的时候同样可以使用这种方法,但是要用format方法来实现
         System.out.println(String.format("message is :%s %s",message1,message2));
     }
 }
