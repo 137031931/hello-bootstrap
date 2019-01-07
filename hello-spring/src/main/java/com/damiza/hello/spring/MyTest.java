@@ -27,6 +27,8 @@ public class MyTest {
         logger.info("message is: {} {}",message1,message2);
         //在字符串拼接的时候同样可以使用这种方法,但是要用format方法来实现
         System.out.println(String.format("message is :%s %s",message1,message2));
+        //这种方式不推荐使用,和用加号差不多
+        System.out.println(message1.concat(message2));
     }
 }
 
