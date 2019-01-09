@@ -3,4 +3,6 @@
        xsi:schemaLocation="
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="userDao" class="com.damiza.my.shop.dao.impl.UserDaoImpl"/>
+    <bean id="userService" class="com.damiza.my.shop.service.impl.UserServiceImpl"/>
+
 </beans>
