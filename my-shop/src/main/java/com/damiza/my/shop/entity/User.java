@@ -10,6 +10,16 @@ public class User implements Serializable {
     private String password;
     private String email;
 
+    private boolean isChecked;
+
+    public boolean isChecked() {
+        return isChecked;
+    }
+
+    public void setChecked(boolean checked) {
+        isChecked = checked;
+    }
+
     public String getUsername() {
         return username;
     }

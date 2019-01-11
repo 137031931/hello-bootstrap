@@ -9,5 +9,5 @@ import com.damiza.my.shop.entity.User;
  * @return 用户
  */
 public interface UserDao {
-    public User getUser(String email,String password);
+    public User getUser(String email, String password);
 }

@@ -4,7 +4,9 @@ import com.damiza.my.shop.dao.UserDao;
 import com.damiza.my.shop.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
 
+@Repository(value = "userDao")
 public class UserDaoImpl implements UserDao {
     /**
      * 验证登录在其中加入日志信息,这种方式叫做埋点
