@@ -1,0 +1,7 @@
+com\damiza\my\shop\service\impl\UserServiceImpl.class
+com\damiza\my\shop\web\controller\LoginController.class
+com\damiza\my\shop\dao\impl\UserDaoImpl.class
+com\damiza\my\shop\service\UserService.class
+com\damiza\my\shop\commons\context\SpringContext.class
+com\damiza\my\shop\dao\UserDao.class
+com\damiza\my\shop\entity\User.class
